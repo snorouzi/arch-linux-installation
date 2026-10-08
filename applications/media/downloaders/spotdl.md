@@ -1,8 +1,8 @@
 # spotdl – Music Downloader from Spotify and Other Platforms
 
-`spotdl` (python-spotdl) is a command‑line tool that downloads music from **Spotify**, YouTube, SoundCloud, and other streaming services. It fetches the audio track, embeds metadata (title, artist, album, cover art), and saves it as an MP3 file.
+`spotdl` is a command‑line tool that downloads music from **Spotify**, YouTube, SoundCloud, and other streaming services. It fetches the audio track, embeds metadata (title, artist, album, cover art), and saves it as an MP3 file.
 
-> **ℹ️ Note:** The AUR package `python-spotdl` installs the latest stable version. This guide uses `yay` as the AUR helper (following the project’s preferred style). For Arch Linux, the package is available only via AUR.
+> **ℹ️ Note:** The AUR package `spotdl` installs the latest stable version. This guide uses `yay` as the AUR helper (following the project’s preferred style). For Arch Linux, the package is available only via AUR.
 
 ---
 
@@ -23,13 +23,13 @@
 
 ## 1. Installation
 
-Install `python-spotdl` from the AUR:
+Install `spotdl` from the AUR:
 
 ```bash
-yay -S python-spotdl
+yay -S spotdl
 ```
 
-> **💡 Tip:** The package name is `python-spotdl`. After installation, the command `spotdl` is available.
+> **💡 Tip:** The package name is `spotdl`. After installation, the command `spotdl` is available.
 
 ---
 
@@ -127,7 +127,7 @@ Now you can use `spdl` instead of `spotdl`.
 Update the package through your AUR helper:
 
 ```bash
-yay -Syu python-spotdl
+yay -Syu spotdl
 ```
 
 ---
@@ -137,7 +137,7 @@ yay -Syu python-spotdl
 Remove the package:
 
 ```bash
-yay -Rns python-spotdl
+yay -Rns spotdl
 ```
 
 Remove the configuration directory (optional):
@@ -152,8 +152,8 @@ rm -rf ~/.config/spotdl
 
 | Problem                                               | Solution                                                                                                                                    |
 | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| `spotdl: command not found`                           | The package may not have been installed correctly. Reinstall with `yay -S python-spotdl`.                                                   |
-| `No module named 'spotdl'` (Python error)             | The installation failed; try building manually: `git clone https://aur.archlinux.org/python-spotdl.git && cd python-spotdl && makepkg -si`. |
+| `spotdl: command not found`                           | The package may not have been installed correctly. Reinstall with `yay -S spotdl`.                                                   |
+| `No module named 'spotdl'` (Python error)             | The installation failed; try building manually: `git clone https://aur.archlinux.org/spotdl.git && cd spotdl && makepkg -si`. |
 | Downloads fail with `ERROR: Could not get track info` | The Spotify API may be rate‑limiting. Wait a few minutes and retry. Sometimes using a `--cookie` from your browser helps.                   |
 | Files are saved without metadata                      | Ensure you have `ffmpeg` installed (`sudo pacman -S ffmpeg`). spotdl uses it for embedding metadata.                                        |
 | Download takes very long                              | The tool fetches audio from YouTube, which is slower than a direct CDN. Use `--preload` to reduce per‑track delays.                         |
