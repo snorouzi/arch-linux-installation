@@ -183,9 +183,10 @@ Office suites, task management, and wellness apps.
 VPNs, tunneling, and remote desktop tools.
 
 - **VPN**
-  - [sshuttle](./networking/vpn/sshuttle.md) – Transparent proxy over SSH
-  - [v2rayN](./networking/vpn/v2rayn.md) – V2Ray client
-  - [Windscribe](./networking/vpn/windscribe.md) – Commercial VPN service
+   - [sshuttle](./networking/vpn/sshuttle.md) – Transparent proxy over SSH
+   - [v2rayN](./networking/vpn/v2rayn.md) – V2Ray client
+   - [Windscribe](./networking/vpn/windscribe.md) – Commercial VPN service
+   - [flclash](./networking/vpn/flclash.md) – Clash-based proxy GUI client
 
 - **Tunneling**
   - [ngrok](./networking/tunneling/ngrok.md) – Secure tunnels to localhost

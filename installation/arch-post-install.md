@@ -988,7 +988,7 @@ Some VPN providers offer their own GUI clients available in the AUR.
 | **Mullvad**                       | `mullvad-vpn` | `paru -S mullvad-vpn` |
 | **NordVPN**                       | `nordvpn-bin` | `paru -S nordvpn-bin` |
 | **ExpressVPN**                    | `expressvpn`  | `paru -S expressvpn`  |
-| **v2ray**                         | `v2rayn`      | `paru -S v2rayn`      |
+| **v2ray**                         | `FlClash`     | `paru -S FlClash`     |
 | **Private Internet Access (PIA)** | `pia-client`  | `paru -S pia-client`  |
 
 > **⚠️ Note:** Provider-specific clients often run as background services and may conflict with NetworkManager. Choose **either** the NetworkManager plugin method **or** the provider's client – not both.
