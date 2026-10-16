@@ -60,8 +60,8 @@ git config --global user.email "your.email@example.com"
 Set your preferred text editor for commit messages and other interactive Git commands. The `--wait` flag ensures Git waits for the editor to close.
 
 ```bash
-# Using Kiro (or replace with 'code --wait', 'cursor --wait', 'nvim', etc.)
-git config --global core.editor "kiro --wait"
+# Using vscode (or replace with 'kiro', 'cursor', 'nvim', etc.)
+git config --global core.editor "code --wait"
 ```
 
 Disable the default pager (so output is printed directly to the terminal):
